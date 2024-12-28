@@ -1,0 +1,18 @@
+compatibility_flags = ["nodejs_compat"]
+name = "pitchedby"
+main = "worker.js"
+compatibility_date = "2024-11-06"
+
+[[routes]]
+pattern = "greater.agency/api/*"
+zone_name = "greater.agency"
+
+# Static file configuration
+[site]
+bucket = "."
+include = ["assets/**/*", "*.html", "src/**/*"]
+exclude = ["node_modules/**/*"]
+
+# Enable logging
+[observability]
+enabled = true

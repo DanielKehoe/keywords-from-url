@@ -1,0 +1,12 @@
+### macOS
+.trash/
+.DS_Store
+
+### environment variables
+.env
+
+### Cloudflare Workers
+src/workers/.wrangler/
+
+### Node
+src/workers/node_modules/
